@@ -21,7 +21,7 @@ engine.io的服务器功能由server模块实现。实现原理是监听request�
 
 engine.io和engine-client库实现双向通信功能流程。默认是使用long polling，然后升级到websocket
 
-1 客户端发送一个http请求（形如GET https://myhost.com/socket.io/?EIO=3&transport=polling&t=ML4jUwU&b64=1），transport参数定义了，客户端想使用的通道。
+1 客户端发送一个http请求（形如GET https://myhost.com/socket.io/?EIO=3&transport=polling&t=ML4jUwU&b64=1 ），transport参数定义了，客户端想使用的通道。
 2 服务器返回一个下面这样的数据包，告诉客户端sid和可用的协议
 ```
 {
